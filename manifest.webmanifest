@@ -1,0 +1,16 @@
+{
+  "name": "Ritmo",
+  "short_name": "Ritmo",
+  "description": "Tareas que funcionan como un calendario. Una app de AitoROCKET apps.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#EDF0F4",
+  "theme_color": "#EDF0F4",
+  "icons": [
+    { "src": "icono-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icono-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
