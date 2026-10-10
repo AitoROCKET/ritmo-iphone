@@ -1,5 +1,5 @@
 // Ritmo · © AitoROCKET apps
-const CACHE = 'ritmo-87daf1665277';
+const CACHE = 'ritmo-701ec2afd67e';
 const ARCHIVOS = ["./","app.js","fonts/texto.woff2","fonts/titulos.woff2","icono-180.png","icono-192.png","icono-512.png","index.html","lib/leaflet/images/layers-2x.png","lib/leaflet/images/layers.png","lib/leaflet/images/marker-icon-2x.png","lib/leaflet/images/marker-icon.png","lib/leaflet/images/marker-shadow.png","lib/leaflet/leaflet-maplibre-gl.js","lib/leaflet/leaflet.css","lib/leaflet/leaflet.js","lib/leaflet/maplibre-gl.css","lib/leaflet/maplibre-gl.js","manifest.webmanifest","motor.js","tutorial.js"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ARCHIVOS)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
